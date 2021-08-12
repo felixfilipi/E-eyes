@@ -25,10 +25,10 @@
 <div class="collapse navbar-collapse" id="collapsibleNavbar">
 <ul class="navbar-nav">
 <li class="nav-item">
-<a class="nav-link" href="index.html">HOME</a>
+<a class="nav-link" href="index.php">HOME</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="about.html">ABOUT</a>
+<a class="nav-link" href="about.php">ABOUT</a>
 </li>
 </ul>
 <ul class="navbar-nav ml-auto">
@@ -40,7 +40,8 @@
 </nav>
 
 <div class="container mt-5">
-  <div class="table-responsive-sm">          
+  <div class="table-responsive-sm"> 
+  <h3 center class="text-dark">SCAN RESULT</h3>  
   <table class="table table-bordered">
     <thead>
       <tr>
