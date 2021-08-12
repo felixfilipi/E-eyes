@@ -1,0 +1,92 @@
+<?php
+session_start();
+
+$loggedin = "";
+
+if(isset($_SESSION["loggedin"]) == FALSE){
+	header("Location: ../index.php");
+	exit;
+}
+
+require_once "./functions.php";
+?>
+
+<html>
+	<head>
+		<title>Main Menu</title>
+	</head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+<body>
+<a href="../index.php">Go back</a>
+<?php
+
+$query = 
+"SELECT 
+    UserPhoto.PhotoDir, 
+    UserPhoto.PhotoName,
+    UserData.FirstName, 
+    UserData.LastName,
+    UserData.Gender,
+    UserData.Role,
+    UserData.LastScan,
+    UserData.LastTemperature
+FROM 
+    UserData,
+    UserPhoto,
+    UserDataset
+WHERE
+    UserDataset.UserId = UserData.UserId AND
+    UserDataset.PhotoId = UserPhoto.PhotoId
+GROUP BY
+    UserData.FirstName";
+
+$stmt = $conn->query($query);
+
+if($stmt->num_rows > 0){
+    echo <<< EOT
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Photo</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Role</th>
+                <th>Last Scan</th>
+                <th>Temperature</th>
+            </tr>
+    EOT;
+
+	$i = 0;
+
+	while($row = $stmt->fetch_assoc()){
+		$i++;
+
+        if($row["LastTemperature"] >= 38){
+            $temp_message = "<font color='red'>". $row["LastTemperature"] ."</font>";
+        }else{
+            $temp_message = $row["LastTemperature"];
+        }
+
+		echo "<tr>
+				<td>" . $i . "</td>
+				<td><img src='../" . $row["PhotoDir"] . $row["PhotoName"] . "'></td>
+                <td>". $row["FirstName"] ." ". $row["LastName"] ."</td>
+                <td>". $row["Gender"] ."</td>
+                <td>". $row["Role"] ."</td>
+                <td>". $row["LastScan"] ."</td>
+                <td>". $temp_message ."</td>
+            </tr>";
+	}
+    echo "</table>";
+}else{
+echo "0 results";
+}
+
+?>
+
+</body>
+</html>

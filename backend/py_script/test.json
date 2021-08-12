@@ -1,0 +1,15 @@
+{
+  "m2m:rqp": {
+    "fr": "c9ab16824dc3b3d4:c76af9ff466e3c4d",
+    "to": "/antares-cse/antares-id/e-eyes/Name",
+    "op": 1,
+    "rqi": 123456,
+    "pc": {
+      "m2m:cin": {
+        "cnf": "message",
+        "con": "on"
+      }
+    },
+    "ty": 4
+  }
+}
