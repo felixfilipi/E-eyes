@@ -7,8 +7,8 @@ import paho.mqtt.client as mqtt
 
 broker = "mqtt.antares.id"
 port = 1883
-rqi = random.randint(0, 10000)
-client = mqtt.Client(str(rqi))
+rqi = "server_trainSignal"
+client = mqtt.Client(rqi)
 
 access_key = "c9ab16824dc3b3d4:c76af9ff466e3c4d"
 to = "/antares-cse/antares-id/e-eyes/train_signal"
@@ -38,3 +38,5 @@ json_obj = json.dumps(content, indent = 1)
 
 client.connect(broker, port)
 client.publish(topic, json_obj)
+
+print(str(1))

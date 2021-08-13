@@ -79,7 +79,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				$last_id = $stmt->insert_id;
 
 				//execute python script
-				$command = escapeshellcmd("/home/brian/.virtualenv/hackaton/bin/python ../py_script/train_signal.py 1");
+				$command = escapeshellcmd("/home/brian/.virtualenvs/hackaton/bin/python ../py_script/train_signal.py 1");
 				$output = null;
 				$output = shell_exec($command);
 				

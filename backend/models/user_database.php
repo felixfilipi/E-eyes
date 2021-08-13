@@ -115,7 +115,7 @@ if($stmt->num_rows > 0){
                 <td>". $row["Gender"] ."</td>
                 <td>". $row["Role"] ."</td>
                 <td>". $row["LastScan"] ."</td>
-                <td>". $temp_message ."</td>
+                <td>". $temp_message ." &deg;C</td>
             </tr>";
 	}
     echo "</tbody></table>";

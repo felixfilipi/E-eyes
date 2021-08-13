@@ -7,11 +7,11 @@ import paho.mqtt.client as mqtt
 
 broker = "mqtt.antares.id"
 port = 1883
-rqi = 1284
-client = mqtt.Client(str(rqi))
+rqi = "server_trainId"
+client = mqtt.Client(rqi)
 
 access_key = "c9ab16824dc3b3d4:c76af9ff466e3c4d"
-to = "/antares-cse/antares-id/e-eyes/train_signal"
+to = "/antares-cse/antares-id/e-eyes/Name"
 topic = "/oneM2M/req/c9ab16824dc3b3d4:c76af9ff466e3c4d/antares-cse/json"
 
 # connect to mysql
@@ -30,23 +30,22 @@ def sqlFetch(sql):
 
 # return subject's name
 def buildUser(data):
-    firstname = data[0][1]
-    lastname = data[0][2]
+    firstname = data[0][0]
+    lastname = data[0][1]
     name = firstname + " " + lastname
-    userid = data[0][0]
-    return userid, name
+    return name
 
 # get user id
 user_id = sys.argv[1]
 
 # get id data
-query = "SELECT UserId, FirstName, LastName FROM UserData WHERE UserId = {}".format(user_id)
+query = "SELECT FirstName, LastName FROM UserData WHERE UserId = {}".format(user_id)
 
 data = sqlFetch(query)
-userid, name = buildUser(data)
+name = buildUser(data)
 
 signal = {
-    "state": 1,
+    "id": user_id,
     "name": name
 }
 json_signal = json.dumps(signal, indent = 1)
@@ -60,7 +59,7 @@ content = {
         "pc": {
             "m2m:cin": {
                 "cnf": "message",
-                "con": str(signal)
+                "con": str(json_signal)
             }
         },
         "ty": 4
@@ -72,3 +71,5 @@ json_obj = json.dumps(content, indent = 1)
 
 client.connect(broker, port)
 client.publish(topic, json_obj)
+
+print(str(1))

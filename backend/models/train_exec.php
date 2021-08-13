@@ -37,8 +37,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]) . "?id=" . $last_id; ?>" method="post">
-	<input type="submit" name="exec" value="Submit" />
-	<input type="submit" name="cancel" value="Cancel" />
+	<input type="submit" name="exec" value="Start" />
+	<input type="submit" name="cancel" value="Reset" />
 </form>
 </body>
 </html>
