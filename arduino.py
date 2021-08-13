@@ -18,7 +18,7 @@ GPIO.output(GPIO_BUZZER, GPIO.LOW)
 
 def get_range():
     GPIO.output(GPIO_TRIGGER, True)
-    time.sleep(0.001)
+    #time.sleep(0.001)
 
     GPIO.output(GPIO_TRIGGER, False)
     timeout_counter = int(time.time())
@@ -51,5 +51,5 @@ while True:
     else:
         print('Suhu = {}'.format(round(sensor.get_object_1()+2.7,2)))
         GPIO.output (GPIO_BUZZER, True)
-       # print(sensor.get_ambient())
+        #print(sensor.get_ambient())
         time.sleep(3)

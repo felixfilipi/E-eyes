@@ -8,7 +8,7 @@ face_detector = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontal
 font = cv2.FONT_HERSHEY_SIMPLEX
 role = input('Role = ')
 
-cam = cv2.VideoCapture(0)
+cam = cv2.VideoCapture(-1,2)
 cv2.namedWindow("window",cv2.WND_PROP_FULLSCREEN)
 cv2.setWindowProperty("window",cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
