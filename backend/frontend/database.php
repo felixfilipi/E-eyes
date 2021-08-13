@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+$loggedin = "";
+
+if(isset($_SESSION["loggedin"]) == FALSE){
+	header("Location: ../index.php");
+	exit;
+}
+
+require_once "./functions.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   
@@ -39,39 +52,79 @@
 </div>
 </nav>
 
-<div class="container mt-5">
-  <div class="table-responsive-sm">    
-  <h3 center class="text-dark">DATABASE</h3>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>No</th>
-        <th>Photo</th>
-        <th>Name</th>
-        <th>Gender</th>
-        <th>Age</th>
-        <th>Address</th>
-        <th>Role</th>
-        <th>Last Scan</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td><img src="profile.png" alt="Anna Pitt" style="width:100%"></td>
-        <td>Anna Pitt</td>
-		<td>Female</td>
-        <td>35</td>
-        <td>New York</td>
-        <td>Employee</td>
-        <td>37 C</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-</div>
 
+<?php
 
+$query = 
+"SELECT 
+    UserPhoto.PhotoDir, 
+    UserPhoto.PhotoName,
+    UserData.FirstName, 
+    UserData.LastName,
+    UserData.Gender,
+    UserData.Role,
+    UserData.LastScan,
+    UserData.LastTemperature
+FROM 
+    UserData,
+    UserPhoto,
+    UserDataset
+WHERE
+    UserDataset.UserId = UserData.UserId AND
+    UserDataset.PhotoId = UserPhoto.PhotoId
+GROUP BY
+    UserData.FirstName";
+
+$stmt = $conn->query($query);
+
+if($stmt->num_rows > 0){
+    echo <<< EOT
+        <div class="container mt-5">
+            <div class="table-responsive-sm">    
+            <h3 center class="text-dark">DATABASE</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Role</th>
+                        <th>Last Scan</th>
+                        <th>Temperature</th>
+                    </tr>
+                </thead>
+            <tbody>
+    EOT;
+
+	$i = 0;
+
+	while($row = $stmt->fetch_assoc()){
+		$i++;
+
+        if($row["LastTemperature"] >= 38){
+            $temp_message = "<font color='red'>". $row["LastTemperature"] ."</font>";
+        }else{
+            $temp_message = $row["LastTemperature"];
+        }
+
+		echo "<tr>
+				<td>" . $i . "</td>
+				<td><img src='../" . $row["PhotoDir"] . $row["PhotoName"] . "' style='width: 50%'></td>
+                <td>". $row["FirstName"] ." ". $row["LastName"] ."</td>
+                <td>". $row["Gender"] ."</td>
+                <td>". $row["Role"] ."</td>
+                <td>". $row["LastScan"] ."</td>
+                <td>". $temp_message ." &deg;C</td>
+            </tr>";
+	}
+    echo "</tbody></table>";
+}else{
+echo "0 results";
+}
+
+?>
+</div></div>
 
 <div class="jumbotron text-center text-white bg-dark" style="margin-bottom:0">
   <p>Copyright ©2021</p>
@@ -81,5 +134,7 @@
 
 </script>
 
+</body>
+</html>
 </body>
 </html>
