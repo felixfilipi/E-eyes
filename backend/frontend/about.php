@@ -48,7 +48,7 @@
 <h2 style="text-align:center" class="mt-5">Our Team</h2>
 <div class="cards-wrapper mb-5">
     <div class="card bg-info" style="width: 250px">
-      <img src="profile.png" alt="Felix Filipi" style="width:100%">
+      <img src="Felix.jpeg" alt="Felix Filipi" style="width:100%">
       <div class="container">
         <h4>Felix Filipi</h4>
         <p class="title">Project Manager & Machine Learning</p>
@@ -58,7 +58,7 @@
 
 
     <div class="card bg-info" style="width: 250px">
-      <img src="profile.png" alt="Febrian Nugroho" style="width:100%">
+      <img src="Febrian.jpeg" alt="Febrian Nugroho" style="width:100%">
       <div class="container">
         <h4>Febrian Nugroho</h4>
         <p class="title">Backend Developer</p>
@@ -67,7 +67,7 @@
     </div>
   
     <div class="card bg-info" style="width: 250px">
-      <img src="profile.png" alt="Christoper Luis Alexander" style="width:100%">
+      <img src="Christoper.jpg" alt="Christoper Luis Alexander" style="width:100%">
       <div class="container">
         <h4>Christoper Luis Alexander</h4>
         <p class="title">Frontend Developer</p>
