@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+$loggedin = "";
+
+if(isset($_SESSION["loggedin"]) == FALSE){
+	header("Location: ../index.php");
+	exit;
+}
+
+require_once "./functions.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   
@@ -39,31 +52,56 @@
 </div>
 </nav>
 
-<div class="container mt-5">
-  <div class="table-responsive-sm">    
-  <h3 center class="text-dark">DOWNLOAD RECORDING</h3>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>No</th>
-        <th>Name</th>
-        <th>Date</th>
-        <th>Download</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Video_2021_09_01_08_05</td>
-        <td>1:20:25</td>
-        <td><a href="#"><img src="../images/resources/download.png" class="mx-auto d-block" style="width:20px; height:20px;" alt="download-recording"></img></a></td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-</div>
+<?php
 
+$query =
+"SELECT
+	 VideoName,
+	 VideoDir,
+	 VideoTaken
+FROM
+     Recordings";
 
+$stmt = $conn->query($query);
+
+if($stmt->num_rows > 0){
+    echo <<< EOT
+          <div class="container mt-5">
+            <div class="table-responsive-sm">    
+            <h3 center class="text-dark">DOWNLOAD RECORDING</h3>
+            <table class="table table-bordered">
+            <thead>
+            <tr>
+            <th>No</th>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Download</th>
+            </tr>
+            </thead>
+            <tbody>
+      EOT,
+	  
+	  $i = 0;
+
+	  while($row = $stmt->fetch_assoc()){
+        $i++;
+		
+	  echo "<tr>
+        <td>" . $i . "</td>
+        <td>". $row["VideoName"] ."</td>
+        <td>". $row["VideoTaken"] ."</td>
+        <td><a href='#'><img src='../images/resources/download.png' class='mx-auto d-block' style='width:20px; height:20px;' alt='download-recording'></img></a></td>
+      </tr>";
+	}
+    echo "</tbody></table>";
+}else{
+    echo "0 results";
+}
+
+?>
+</div></div>
+
+<br><br>
 
 <div class="jumbotron static-bottom text-center text-white bg-dark" style="margin-bottom:0">
   <p>Copyright @2021</p>
