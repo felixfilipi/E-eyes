@@ -7,40 +7,40 @@
 <meta name="viewport" content="width-device-width initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="./styles/style1.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script src="js/index.js"></script>
+<script src="./styles/index.js"></script>
 </head>
 
 <body>
 <nav class="navbar navbar-expand-sm bg-info navbar-dark navbar-static-top">
-<a class="navbar-brand" href="index.php">e-Eyes</a>
+<a class="navbar-brand" href="./index.php">e-Eyes</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="collapsibleNavbar">
 <ul class="navbar-nav">
 <li class="nav-item">
-<a class="nav-link active" href="index.php">HOME</a>
+<a class="nav-link active" href="./templates/main_menu.php">HOME</a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="about.php">ABOUT</a>
+<a class="nav-link" href="./about.php">ABOUT</a>
 </li>
 </ul>
 <ul class="navbar-nav ml-auto">
 <li class="nav-item">
-<a class="nav-link" href="#"><img src="logout.png" width=20px height=20px></img>LOGOUT</a>
+<a class="nav-link" href="./auth/logout.php"><img src="./images/resources/logout.png" width=20px height=20px></img>LOGOUT</a>
 </li>
 </ul>
 </div>
 </nav>
 
 <div class="container">
-  <img src="techbg.jpg" alt="Background" style="width:100%; height:350px;">
+  <img src="./images/resources/techbg.jpg" alt="Background" style="width:100%; height:350px;">
   <div class="centered"><h1><b>e-Eyes</b></h1></div>
 </div>
 
@@ -49,9 +49,9 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <div class="cards-wrapper">
-      <a href="camerastream.php">
-          <div class="card bg-primary text-white rounded-lg">
-            <img src="camera.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="camera-stream">
+      <a href="./models/camerastream.php">
+          <div class="card card-box bg-primary text-white rounded-lg">
+            <img src="./images/resources/camera.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="camera-stream">
             <div class="card-body">
               <h5 class="card-title text-white">Camera Stream</h5>
               <p class="card-text text-white">Streaming camera in real-time</p>
@@ -59,10 +59,10 @@
             </div>
           </div>
       </a>
-      <a href="database.php">
+      <a href="./models/user_database.php">
       <div class="card d-none d-md-block bg-warning rounded-lg">
 	  <br>
-        <img src="database.png" class="card-img-top mx-auto d-block" style="width:140px; height:152px" alt="database">
+        <img src="./images/resources/database.png" class="card-img-top mx-auto d-block" style="width:140px; height:152px" alt="database">
         <div class="card-body">
           <h5 class="card-title text-white">Database</h5>
           <p class="card-text text-white">View data from database</p>
@@ -70,9 +70,9 @@
         </div>
       </div>
       </a>
-      <a href="scanresult.php">
+      <a href="./models/scan_result.php">
         <div class="card d-none d-md-block bg-info rounded-lg">
-          <img src="scan.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="scan-result">
+          <img src="./images/resources/scan.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="scan-result">
           <div class="card-body">
             <h5 class="card-title text-white">Scan Result</h5>
             <p class="card-text text-white">View scan result on the day</p>
@@ -84,9 +84,9 @@
     </div>
     <div class="carousel-item">
       <div class="cards-wrapper">
-        <a href="training.php">
+        <a href="./models/train.php">
           <div class="card bg-primary text-white rounded-lg">
-            <img src="training.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="training">
+            <img src="./images/resources/training.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="training">
             <div class="card-body">
               <h5 class="card-title text-white">Training</h5>
               <p class="card-text text-white">Start training the data</p>
@@ -94,10 +94,10 @@
             </div>
           </div>
       </a>
-      <a href="downloadrecording.php">
+      <a href="./models/downloadrecording.php">
         <div class="card d-none d-md-block bg-success rounded-lg">
 		<br>
-          <img src="download.png" class="card-img-top mx-auto d-block" style="width:140px; height:144px;" alt="download-recording">
+          <img src="./images/resources/download.png" class="card-img-top mx-auto d-block" style="width:140px; height:144px;" alt="download-recording">
           <div class="card-body mt-2">
             <h5 class="card-title text-white">Download Recording</h5>
             <p class="card-text text-white">Download your recording</p>
