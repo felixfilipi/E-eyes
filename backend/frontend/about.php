@@ -45,8 +45,8 @@
   <p>This website is the solution</p>
 </div>
 
-<h2 style="text-align:center">Our Team</h2>
-<div class="cards-wrapper">
+<h2 style="text-align:center" class="mt-5">Our Team</h2>
+<div class="cards-wrapper mb-5">
     <div class="card bg-info" style="width: 250px">
       <img src="profile.png" alt="Felix Filipi" style="width:100%">
       <div class="container">
@@ -60,7 +60,7 @@
     <div class="card bg-info" style="width: 250px">
       <img src="profile.png" alt="Febrian Nugroho" style="width:100%">
       <div class="container">
-        <h4>Felix Nugroho</h4>
+        <h4>Febrian Nugroho</h4>
         <p class="title">Backend Developer</p>
         <p>A man who wants to be loved.</p>
       </div>
@@ -74,7 +74,6 @@
         <p>A man who wants to be loved.</p>
       </div>
     </div>
-
 </div>
 
 <div class="jumbotron text-center text-white bg-dark" style="margin-bottom:0">
