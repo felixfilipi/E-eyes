@@ -30,8 +30,10 @@ require_once "./functions.php";
 </head>
 
 <body>
-<nav class="navbar navbar-expand-sm bg-info navbar-dark navbar-static-top">
-<a class="navbar-brand" href="../index.php">e-Eyes</a>
+<script src="../styles/logoutfunc.js"> </script>
+
+<nav class="navbar navbar-expand-sm navbar-dark navbar-static-top" style="background: #356BF3;">
+<a class="navbar-brand" href="../index.php"><img src="../images/resources/coole.png" alt="logo" style="width:60px;"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -46,7 +48,7 @@ require_once "./functions.php";
 </ul>
 <ul class="navbar-nav ml-auto">
 <li class="nav-item">
-<a class="nav-link" href="../auth/logout.php"><img src="../images/resources/logout.png" width=20px height=20px></img>LOGOUT</a>
+<a class="nav-link" id="logout" href="../auth/logout.php" onclick="logout"><img src="../images/resources/logout.png" width=20px height=20px></img>LOGOUT</a>
 </li>
 </ul>
 </div>
@@ -113,7 +115,7 @@ if($stmt->num_rows > 0){
                 <td>". $row["Role"] ."</td>
                 <td>". $row["ScanDate"] ."</td>
                 <td>". $temp_message ."</td>
-            <tr>";
+            </tr>";
     
     }
     echo "</tbody></table>";
@@ -123,8 +125,10 @@ if($stmt->num_rows > 0){
 
 ?>
 </div></div>
+<br><br>
 
 <div class="jumbotron text-center text-white bg-dark" style="margin-bottom:0">
+  <p>Cool-e Incorporation</p>
   <p>Copyright ©2021</p>
 </div>
 
