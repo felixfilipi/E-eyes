@@ -17,15 +17,17 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-sm bg-info navbar-dark navbar-static-top">
-<a class="navbar-brand" href="./index.php">e-Eyes</a>
+<script src="./styles/logoutfunc.js"> </script>
+
+<nav class="navbar navbar-expand-sm navbar-dark navbar-static-top" style="background: #356BF3;">
+<a class="navbar-brand" href="./index.php"><img src="./images/resources/coole.png" alt="logo" style="width:60px;"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="collapsibleNavbar">
 <ul class="navbar-nav">
 <li class="nav-item">
-<a class="nav-link active" href="./templates/main_menu.php">HOME</a>
+<a class="nav-link active" href="./index.php">HOME</a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="./about.php">ABOUT</a>
@@ -33,7 +35,7 @@
 </ul>
 <ul class="navbar-nav ml-auto">
 <li class="nav-item">
-<a class="nav-link" href="./auth/logout.php"><img src="./images/resources/logout.png" width=20px height=20px></img>LOGOUT</a>
+<a class="nav-link" id="logout" href="./auth/logout.php" onclick="logout"><img src="./images/resources/logout.png" width=20px height=20px></img>LOGOUT</a>
 </li>
 </ul>
 </div>
@@ -53,30 +55,30 @@
           <div class="card card-box bg-primary text-white rounded-lg">
             <img src="./images/resources/camera.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="camera-stream">
             <div class="card-body">
-              <h5 class="card-title text-white">Camera Stream</h5>
-              <p class="card-text text-white">Streaming camera in real-time</p>
+              <h5 class="card-title text-dark">Camera Stream</h5>
+              <p class="card-text text-dark">Streaming camera in real-time</p>
 			  <p class="card-text text-primary">Some quick example text to build on the card title and</p>
             </div>
           </div>
       </a>
       <a href="./models/user_database.php">
-      <div class="card d-none d-md-block bg-warning rounded-lg">
+      <div class="card d-none d-md-block rounded-lg" style="background: #F3356B;">
 	  <br>
         <img src="./images/resources/database.png" class="card-img-top mx-auto d-block" style="width:140px; height:152px" alt="database">
         <div class="card-body">
-          <h5 class="card-title text-white">Database</h5>
-          <p class="card-text text-white">View data from database</p>
-		  <p class="card-text text-warning">Some quick example text to build on the card title and</p>
+          <h5 class="card-title text-dark">Database</h5>
+          <p class="card-text text-dark">View data from database</p>
+		  <p class="card-text" style="color:#F3356B;">Some quick example text to build on the card title and</p>
         </div>
       </div>
       </a>
       <a href="./models/scan_result.php">
-        <div class="card d-none d-md-block bg-info rounded-lg">
+        <div class="card d-none d-md-block rounded-lg" style="background:#36F3BC;">
           <img src="./images/resources/scan.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="scan-result">
           <div class="card-body">
-            <h5 class="card-title text-white">Scan Result</h5>
-            <p class="card-text text-white">View scan result on the day</p>
-			<p class="card-text text-info">Some quick example text to build on the card title and</p>
+            <h5 class="card-title text-dark">Scan Result</h5>
+            <p class="card-text text-dark">View scan result on the day</p>
+			<p class="card-text" style="color:#36F3BC;">Some quick example text to build on the card title and</p>
           </div>
         </div>
       </a>
@@ -88,20 +90,20 @@
           <div class="card bg-primary text-white rounded-lg">
             <img src="./images/resources/training.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="training">
             <div class="card-body">
-              <h5 class="card-title text-white">Training</h5>
-              <p class="card-text text-white">Start training the data</p>
+              <h5 class="card-title text-dark">Training</h5>
+              <p class="card-text text-dark">Start training the data</p>
 			  <p class="card-text text-primary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
       </a>
       <a href="./models/downloadrecording.php">
-        <div class="card d-none d-md-block bg-success rounded-lg">
+        <div class="card d-none d-md-block rounded-lg" style="background:#36F3BC;">
 		<br>
           <img src="./images/resources/download.png" class="card-img-top mx-auto d-block" style="width:140px; height:144px;" alt="download-recording">
           <div class="card-body mt-2">
-            <h5 class="card-title text-white">Download Recording</h5>
-            <p class="card-text text-white">Download your recording</p>
-			<p class="card-text text-success">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title text-dark">Download Recording</h5>
+            <p class="card-text text-dark">Download your recording</p>
+			<p class="card-text" style="color:#36F3BC;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
       </a>
@@ -120,6 +122,7 @@
 </div>
     
 <div class="jumbotron text-center text-white bg-dark" style="margin-bottom:0">
+  <p>Cool-e Incorporation</p>
   <p>Copyright ©2021</p>
 </div>
 
