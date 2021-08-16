@@ -55,7 +55,7 @@
           <div class="card card-box bg-primary text-white rounded-lg">
             <img src="./images/resources/camera.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="camera-stream">
             <div class="card-body">
-              <h5 class="card-title text-dark">Camera Stream</h5>
+              <h5 class="card-title text-dark">CCTV</h5>
               <p class="card-text text-dark">Streaming camera in real-time</p>
 			  <p class="card-text text-primary">Some quick example text to build on the card title and</p>
             </div>
@@ -77,7 +77,7 @@
           <img src="./images/resources/scan.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="scan-result">
           <div class="card-body">
             <h5 class="card-title text-dark">Scan Result</h5>
-            <p class="card-text text-dark">View scan result on the day</p>
+            <p class="card-text text-dark">View presence data on the day</p>
 			<p class="card-text" style="color:#36F3BC;">Some quick example text to build on the card title and</p>
           </div>
         </div>
