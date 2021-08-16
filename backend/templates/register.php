@@ -38,7 +38,11 @@
 		  
 		  <div class="form-outline mb-4 <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
             <input type="password" placeholder="Confirm Password" id="formconfirmpassword" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
-			<span class="help-block text-danger"><?php echo $confirm_password_err; ?></span><br>
+			<span class="help-block text-danger"><?php echo $confirm_password_err; ?></span>
+          </div>
+		  
+		  <div class="form-outline mb-4 <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+            <a href="../auth/login.php">Already have an account? Login here.</a>
           </div>
 
           <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
