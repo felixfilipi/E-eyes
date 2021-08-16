@@ -15,11 +15,11 @@ about this product, you can check it out in our pitch deck.
 
 # Demo
 
-You can see demo for this device <a href = ""> here </a>
+You can see demo for this device <a href = "https://www.youtube.com/watch?v=bMadRFkAP9I"> here </a>
 
 # Hacking Time Documentation
 
-And the hacking time documentation right <a href = ""> here</a>
+And the hacking time documentation right <a href = "https://www.youtube.com/watch?v=dHCOeMHmm3w"> here</a>
 
 # You need to install these libraries on your work environment:
 
