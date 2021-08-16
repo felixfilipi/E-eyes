@@ -33,9 +33,12 @@
 
           <div class="form-outline mb-4">
             <input type="password" placeholder="Password" id="formpassword" name="password" class="form-control" value="<?php echo $password; ?>">
-            <span class="help-block text-danger"><?php echo $password_err; ?></span><br>
+            <span class="help-block text-danger"><?php echo $password_err; ?></span>
           </div>
-
+		  
+		  <div class="form-outline mb-4">
+            <a href="../models/setup.php">Don't have an account? Register here.</a>
+          </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
 		  
         </form>
