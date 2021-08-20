@@ -1,9 +1,13 @@
 # Demo result and hacking time documentation :point_down:
 
+
 <p align="center">
   <img src="https://github.com/felixfilipi/eEyes-Hackathon/blob/master/logo.jpg" width="300" height="300">
+  <br><br><img src = "https://img.shields.io/tokei/lines/github/felixfilipi/eEyes-Hackathon?color=green">
+  <img src = "https://img.shields.io/github/languages/count/felixfilipi/eEyes-Hackathon?color=red" >
+  <img src = "https://img.shields.io/github/languages/top/felixfilipi/eEyes-Hackathon">
+  <img src = "https://img.shields.io/github/repo-size/felixfilipi/eEyes-Hackathon?color=yellow">
 </p>
-
 
 <h3 align="center"> Cool-E tech
 
