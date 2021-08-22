@@ -62,7 +62,7 @@
           </div>
       </a>
       <a href="./models/user_database.php">
-      <div class="card d-none d-md-block rounded-lg" style="background: #E68E8E">
+      <div class="card rounded-lg" style="background: #E68E8E">
 	  <br>
         <img src="./images/resources/database.png" class="card-img-top mx-auto d-block" style="width:140px; height:152px" alt="database">
         <div class="card-body">
@@ -73,7 +73,7 @@
       </div>
       </a>
       <a href="./models/scan_result.php">
-        <div class="card d-none d-md-block rounded-lg" style="background:#36F3BC;">
+        <div class="card rounded-lg" style="background:#36F3BC;">
           <img src="./images/resources/scan.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="scan-result">
           <div class="card-body">
             <h5 class="card-title text-dark">Scan Result</h5>
@@ -97,7 +97,7 @@
           </div>
       </a>
       <a href="./models/downloadrecording.php">
-        <div class="card d-none d-md-block rounded-lg" style="background:#36F3BC;">
+        <div class="card rounded-lg" style="background:#36F3BC;">
 		<br>
           <img src="./images/resources/download.png" class="card-img-top mx-auto d-block" style="width:140px; height:144px;" alt="download-recording">
           <div class="card-body mt-2">
