@@ -20,7 +20,7 @@
 <script src="./styles/logoutfunc.js"> </script>
 
 <nav class="navbar navbar-expand-sm navbar-dark navbar-static-top" style="background: #356BF3;">
-<a class="navbar-brand" href="./index.php"><img src="./images/resources/coole.png" alt="logo" style="width:60px;"></a>
+<a class="navbar-brand" href="./index.php"><img src="./images/resources/ketokan.png" alt="logo" style="width:60px;" /></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -42,8 +42,8 @@
 </nav>
 
 <div class="container">
-  <img src="./images/resources/techbg.jpg" alt="Background" style="width:100%; height:350px;">
-  <div class="centered"><h1><b>e-Eyes</b></h1></div>
+  <img src="./images/resources/bg1.jpg" alt="Background" style="width:100%; height:350px;">
+  <div class="centered"><img src="./images/resources/coole(8).jpg" alt="logo" style="width:150px;" /></div>
 </div>
 
 <div class="container">
@@ -52,23 +52,23 @@
     <div class="carousel-item active">
       <div class="cards-wrapper">
       <a href="./models/camerastream.php">
-          <div class="card card-box bg-primary text-white rounded-lg">
+          <div class="card card-box rounded-lg" style="background: #C0D9F1;">
             <img src="./images/resources/camera.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="camera-stream">
             <div class="card-body">
               <h5 class="card-title text-dark">CCTV</h5>
               <p class="card-text text-dark">Streaming camera in real-time</p>
-			  <p class="card-text text-primary">Some quick example text to build on the card title and</p>
+			  <p class="card-text" style="color: #C0D9F1;">Some quick example text to build on the card title and</p>
             </div>
           </div>
       </a>
       <a href="./models/user_database.php">
-      <div class="card d-none d-md-block rounded-lg" style="background: #F3356B;">
+      <div class="card d-none d-md-block rounded-lg" style="background: #E68E8E">
 	  <br>
         <img src="./images/resources/database.png" class="card-img-top mx-auto d-block" style="width:140px; height:152px" alt="database">
         <div class="card-body">
           <h5 class="card-title text-dark">Database</h5>
           <p class="card-text text-dark">View data from database</p>
-		  <p class="card-text" style="color:#F3356B;">Some quick example text to build on the card title and</p>
+		  <p class="card-text" style="color:#E68E8E;">Some quick example text to build on the card title and</p>
         </div>
       </div>
       </a>
@@ -87,12 +87,12 @@
     <div class="carousel-item">
       <div class="cards-wrapper">
         <a href="./models/train.php">
-          <div class="card bg-primary text-white rounded-lg">
+          <div class="card card-box rounded-lg" style="background: #C0D9F1;">
             <img src="./images/resources/training.png" class="card-img-top mx-auto d-block" style="width:140px;" alt="training">
             <div class="card-body">
               <h5 class="card-title text-dark">Training</h5>
               <p class="card-text text-dark">Start training the data</p>
-			  <p class="card-text text-primary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			  <p class="card-text" style="color: #C0D9F1;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
       </a>
@@ -122,8 +122,8 @@
 </div>
     
 <div class="jumbotron text-center text-white bg-dark" style="margin-bottom:0">
-  <p>Cool-e Incorporation</p>
-  <p>Copyright ©2021</p>
+  <p style="font-family: Courier New;">Cool-e Incorporation</p>
+  <p style="font-family: Arial; font-size: 10pt;">Copyright ©2021</p>
 </div>
 
 </body>
