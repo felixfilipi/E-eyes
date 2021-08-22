@@ -20,7 +20,7 @@
 <script src="../styles/logoutfunc.js"> </script>
 
 <nav class="navbar navbar-expand-sm navbar-dark navbar-static-top" style="background: #356BF3;">
-<a class="navbar-brand" href="../index.php"><img src="../images/resources/coole.png" alt="logo" style="width:60px;"></a>
+<a class="navbar-brand" href="../index.php"><img src="../images/resources/ketokan.png" alt="logo" style="width:60px;" /></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -52,8 +52,8 @@
 <br><br>
 
 <div class="jumbotron text-center text-white bg-dark" style="margin-bottom:0">
-  <p>Cool-e Incorporation</p>
-  <p>Copyright ©2021</p>
+  <p style="font-family: Courier New;">Cool-e Incorporation</p>
+  <p style="font-family: Arial; font-size: 10pt;">Copyright ©2021</p>
 </div>
 
 </body>
