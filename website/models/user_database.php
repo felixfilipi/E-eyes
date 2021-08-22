@@ -82,7 +82,7 @@ $stmt = $conn->query($query);
 if($stmt->num_rows > 0){
     echo <<< EOT
         <div class="container mt-5">
-            <div class="table-responsive-sm">    
+            <div class="table-responsive-lg table-responsive-md table-responsive-sm table-responsive-xs">    
             <h3 center class="text-dark">DATABASE</h3>
             <table class="table table-bordered">
                 <thead>
