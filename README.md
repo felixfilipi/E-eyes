@@ -36,10 +36,6 @@ And the hacking time documentation right <a href = "https://www.youtube.com/watc
 * etc.
 
 The setup files will be pushed onthis repository ASAP.
-
-# Telkom Digital Platform
-
- We are using antares as our mqtt provider to help two directional communication between server and device.
   
 For further documentation will be updated as soon as possible.
 
