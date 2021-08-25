@@ -26,7 +26,7 @@ You can see demo for this device <a href = "https://www.youtube.com/watch?v=bMad
 
 And the hacking time documentation right <a href = "https://www.youtube.com/watch?v=dHCOeMHmm3w"> here</a>
 
-# You need to install these libraries on your work environment:
+# Libraries:
 
 * Python - OpenCV
 * Numpy
