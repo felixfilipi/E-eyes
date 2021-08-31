@@ -18,13 +18,9 @@ E-eyes is an open-source IoT project to build a monitoring system combining 3 ma
 temperature scanner, and CCTV as its additional feature. This project still on going and not completed yet, but good enough to be our minimum viable product (MVP). For further information
 about this product, you can check it out in our pitch deck.
 
-# Demo
+# Documentation
 
-You can see demo for this device <a href = "https://www.youtube.com/watch?v=bMadRFkAP9I"> here </a>
-
-# Hacking Time Documentation
-
-And the hacking time documentation right <a href = "https://www.youtube.com/watch?v=dHCOeMHmm3w"> here</a>
+You can see demo for this device <a href = "https://www.youtube.com/watch?v=bMadRFkAP9I"> here </a>, And the hacking time <a href = "https://www.youtube.com/watch?v=dHCOeMHmm3w"> here </a>
 
 # Libraries:
 
