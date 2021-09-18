@@ -1,5 +1,3 @@
-<h1 align="center"> Cool-E tech</h1>
-
 <br><p align="center">
   <img src="https://github.com/felixfilipi/eEyes-Hackathon/blob/master/logo.jpg" width="300" height="300">
   <br><br><img src = "https://img.shields.io/tokei/lines/github/felixfilipi/eEyes-Hackathon?color=green">
