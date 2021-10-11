@@ -1,6 +1,6 @@
 <br><p align="center">
   <img src="https://github.com/felixfilipi/eEyes-Hackathon/blob/master/logo.jpg" width="300" height="300">
-  <br><br><img src = "https://img.shields.io/tokei/lines/github/felixfilipi/eEyes-Hackathon?color=green">
+  <br><br><img src = "https://img.shields.io/github/contributors/felixfilipi/e-Eyes-Attendance-System">
   <img src = "https://img.shields.io/github/languages/count/felixfilipi/eEyes-Hackathon?color=red" >
   <a href="https://www.youtube.com/watch?v=bMadRFkAP9I">
    <img src="https://img.shields.io/twitter/url?label=Demo&logo=youtube&style=social&url=https%3A%2F%2Fwww.instagram.com%2Ffelix.filipi%2F">
