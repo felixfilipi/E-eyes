@@ -1,7 +1,3 @@
-
-
-arr = ["brian", "brian", "felix", "felix", "cepi", "cepi", "cepi"]
-
 class LabelEncoder:
     def __init__(self, dataset):
         self.dataset = dataset
@@ -50,8 +46,8 @@ class LabelEncoder:
 
         return inversed
 
-
-new = LabelEncoder(arr)
-new_arr = new.fit()
-print(new.dict)
-print(new.inverse_transform(new_arr))
+# Call Function
+# new = LabelEncoder(arr)
+# new_arr = new.fit()
+# print(new.dict)
+# print(new.inverse_transform(new_arr))
