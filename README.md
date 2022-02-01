@@ -29,7 +29,7 @@ You can see demo for this device <a href = "https://www.youtube.com/watch?v=bMad
 * paho mqtt
 * etc.
 
-The setup files will be pushed onthis repository ASAP.
+The setup files will be pushed on this repository ASAP.
   
 For further documentation will be updated as soon as possible.
 
